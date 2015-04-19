@@ -11,18 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150417111418) do
+ActiveRecord::Schema.define(version: 20150419023921) do
 
-  create_table "groups", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+# Could not dump table "groups" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
   create_table "locations", force: true do |t|
     t.string   "name"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "address"
   end
 
   create_table "users", force: true do |t|
@@ -38,6 +37,12 @@ ActiveRecord::Schema.define(version: 20150417111418) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "username"
+    t.integer  "password"
+    t.string   "name"
+    t.integer  "year"
+    t.string   "major"
+    t.integer  "phone"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

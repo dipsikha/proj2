@@ -5566,3 +5566,449 @@ Started GET "/assets/cafe3.jpg" for 127.0.0.1 at 2015-04-17 04:22:44 -0700
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-04-17 11:23:12.296617"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-17 11:23:12.296617"]]
   [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserAttributes (20150419015451)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.5ms)[0m  [1mALTER TABLE "users" ADD "username" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "password" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "name" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "year" integer
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "major" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "phone" integer
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150419015451"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddLocationAttributes (20150419015857)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "locations" ADD "address" varchar(255)[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150419015857"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddGroupAttributes (20150419015947)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "groups" ADD "location" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "groups" ADD "time" integer
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150419015947"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36m (2.9ms)[0m  [1mDROP TABLE "groups"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "location" varchar(255), "time" integer) 
+  [1m[36m (1.3ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "address" varchar(255)) 
+  [1m[36m (1.9ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "username" varchar(255), "password" integer, "name" varchar(255), "year" integer, "major" varchar(255), "phone" integer) 
+  [1m[36m (0.5ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-04-19 02:02:14.431799"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-19 02:02:14.431799"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-04-19 02:02:14.435878"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-19 02:02:14.435878"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-04-19 02:02:14.437718"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-19 02:02:14.437718"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-04-19 02:02:14.439382"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-19 02:02:14.439382"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT  "locations".* FROM "locations"   ORDER BY "locations"."id" ASC LIMIT 1[0m
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "groups"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "location" varchar(255), "time" integer) 
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "address" varchar(255)) 
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "username" varchar(255), "password" integer, "name" varchar(255), "year" integer, "major" varchar(255), "phone" integer) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mLocation Load (1.6ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "groups"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "location" varchar(255), "time" integer) 
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "address" varchar(255)) 
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "username" varchar(255), "password" integer, "name" varchar(255), "year" integer, "major" varchar(255), "phone" integer) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-19 02:06:18.698103"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-19 02:06:18.698103"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-19 02:06:18.703022"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-19 02:06:18.703022"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:06:18.704945"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-19 02:06:18.704945"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:06:18.706688"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-19 02:06:18.706688"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mLocation Load (1.8ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeTimeVariableInGroup (20150419021221)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TEMPORARY TABLE "agroups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "location" varchar(255), "time" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "groups"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "groups"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "location" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "agroups"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "agroups"
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "groups" ADD "time" Time[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150419021221"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (1.9ms)[0m  [1mDROP TABLE "groups"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "location" varchar(255), "time" time) 
+  [1m[36m (1.3ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "address" varchar(255)) 
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "username" varchar(255), "password" integer, "name" varchar(255), "year" integer, "major" varchar(255), "phone" integer) 
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-19 02:17:05.519396"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-19 02:17:05.519396"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-19 02:17:05.523231"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-19 02:17:05.523231"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:17:05.524744"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-19 02:17:05.524744"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:17:05.526277"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-19 02:17:05.526277"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-19 02:17:13.107695"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-19 02:17:13.107695"]]
+  [1m[35m (8.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-19 02:17:13.119339"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-19 02:17:13.119339"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:17:13.121225"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-19 02:17:13.121225"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:17:13.123108"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-19 02:17:13.123108"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNameToGroup (20150419021743)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "groups" ADD "name" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "groups" ADD "description" varchar(255)
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150419021743"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36m (1.6ms)[0m  [1mDROP TABLE "groups"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "location" varchar(255), "time" time, "name" varchar(255), "description" varchar(255)) 
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "address" varchar(255)) 
+  [1m[36m (1.7ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "username" varchar(255), "password" integer, "name" varchar(255), "year" integer, "major" varchar(255), "phone" integer) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-19 02:19:07.374586"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-19 02:19:07.374586"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-19 02:19:07.378890"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-19 02:19:07.378890"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:19:07.381096"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-19 02:19:07.381096"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:19:07.382994"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-19 02:19:07.382994"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-19 02:20:30.937714"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-19 02:20:30.937714"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-19 02:20:30.943081"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-19 02:20:30.943081"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:20:30.944763"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-19 02:20:30.944763"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:20:30.946292"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-19 02:20:30.946292"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeGroupAttributes (20150419023921)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TEMPORARY TABLE "agroups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "location" varchar(255), "time" time, "name" varchar(255), "description" varchar(255)) [0m
+  [1m[35m (0.4ms)[0m  SELECT * FROM "groups"
+  [1m[36m (0.7ms)[0m  [1mDROP TABLE "groups"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "location" loc, "time" time, "name" varchar(255), "description" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "agroups"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "agroups"
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150419023921"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-19 02:40:11.243669"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-19 02:40:11.243669"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-19 02:40:11.249541"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-19 02:40:11.249541"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:40:11.251271"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-19 02:40:11.251271"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:40:11.252924"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-19 02:40:11.252924"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "address" varchar(255)) 
+  [1m[36m (1.3ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "username" varchar(255), "password" integer, "name" varchar(255), "year" integer, "major" varchar(255), "phone" integer) 
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-19 02:40:25.582232"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-19 02:40:25.582232"]]
+  [1m[35m (9.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-19 02:40:25.594601"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-19 02:40:25.594601"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:40:25.597456"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-19 02:40:25.597456"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-19 02:40:25.599897"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-19 02:40:25.599897"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36m (3.0ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "address" varchar(255)) 
+  [1m[36m (1.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "username" varchar(255), "password" integer, "name" varchar(255), "year" integer, "major" varchar(255), "phone" integer) 
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-19 03:04:08.407669"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-19 03:04:08.407669"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-19 03:04:08.411948"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-19 03:04:08.411948"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-19 03:04:08.413592"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-19 03:04:08.413592"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-19 03:04:08.415284"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-19 03:04:08.415284"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "address" varchar(255)) 
+  [1m[36m (1.6ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "username" varchar(255), "password" integer, "name" varchar(255), "year" integer, "major" varchar(255), "phone" integer) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-19 03:04:39.731954"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-19 03:04:39.731954"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-19 03:04:39.736792"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-19 03:04:39.736792"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-19 03:04:39.738601"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-19 03:04:39.738601"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-19 03:04:39.740177"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-19 03:04:39.740177"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
