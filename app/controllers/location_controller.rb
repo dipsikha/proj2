@@ -4,6 +4,4 @@ class LocationController < ApplicationController
 		@locations = Location.all
 	end
 
-	def create
-	end
 end
