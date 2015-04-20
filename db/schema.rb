@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150419023921) do
 
-# Could not dump table "groups" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
-
   create_table "locations", force: true do |t|
     t.string   "name"
     t.text     "description"
