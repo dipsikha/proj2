@@ -4,7 +4,8 @@
     <div class="row">
      
           <% @locations.each do |location| %>
-              <div class="ih-item circle effect1"><a href="#">
+          <% @id = location.id %>
+              <div class="ih-item circle effect1"><% link_to "", locations_path(id: @id), :method => :get %>
         <div class="spinner"></div>
         <div class="img"><%= image_tag("cafe3.jpg", :alt => "cafe") %></div>
         <div class="info">
