@@ -6793,3 +6793,339 @@ Migrating to ChangeGroupAttribute (20150420002631)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-20 00:50:34.619805"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-20 00:50:34.619805"]]
   [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-23 17:43:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (4.5ms)
+  Rendered layouts/_navigation.html.erb (6.3ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 6248ms (Views: 6236.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 128ms (Views: 127.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-23 17:43:33 -0700
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-23 17:43:46 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (34.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 242ms (Views: 238.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-23 17:54:22 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (6.5ms)
+  Rendered layouts/_messages.html.erb (1.7ms)
+Completed 200 OK in 180ms (Views: 178.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation_links.html.erb (4.0ms)
+  Rendered layouts/_navigation.html.erb (5.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 392ms (Views: 382.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-23 18:01:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-24 01:11:41.637896"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-24 01:11:41.637896"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-24 01:11:41.643906"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-24 01:11:41.643906"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-24 01:11:41.645760"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-24 01:11:41.645760"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-24 01:11:41.647632"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-24 01:11:41.647632"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36m (2.6ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "address" varchar(255)) 
+  [1m[36m (1.7ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "username" varchar(255), "password" integer, "name" varchar(255), "year" integer, "major" varchar(255), "phone" integer) 
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-24 01:13:50.508467"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-24 01:13:50.508467"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-24 01:13:50.512444"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-24 01:13:50.512444"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-24 01:13:50.514124"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-24 01:13:50.514124"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-24 01:13:50.515747"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-24 01:13:50.515747"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-24 01:15:48.013201"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-24 01:15:48.013201"]]
+  [1m[35m (8.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-24 01:15:48.025503"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-24 01:15:48.025503"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-24 01:15:48.028427"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-24 01:15:48.028427"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-24 01:15:48.030365"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-24 01:15:48.030365"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGroups (20150424012039)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGroups (20150424012118)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "time" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150424012118"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-24 01:21:27.722614"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-24 01:21:27.722614"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-24 01:21:27.727310"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-24 01:21:27.727310"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-24 01:21:27.729186"], ["description", "Dining Hall"], ["name", "CKC"], ["updated_at", "2015-04-24 01:21:27.729186"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-24 01:21:27.730885"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-24 01:21:27.730885"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "groups" ("created_at", "description", "name", "time", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-04-24 01:21:27.736385"], ["description", "Winter is Coming"], ["name", "The Starks"], ["time", "2015-04-20 02:30:00.000000"], ["updated_at", "2015-04-24 01:21:27.736385"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "groups" ("created_at", "description", "name", "time", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2015-04-24 01:21:27.738947"], ["description", "Hear Me Roar!"], ["name", "The Lannisters"], ["time", "2015-04-19 16:00:00.000000"], ["updated_at", "2015-04-24 01:21:27.738947"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mGroup Load (1.8ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
