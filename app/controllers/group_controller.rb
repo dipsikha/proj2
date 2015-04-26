@@ -12,6 +12,7 @@ class GroupController < ApplicationController
 		@group = Group.find(params[:gid])
 		user = User.find(params[:uid])
    		group.users <<  user #Add user to group
+   		group.save
     end
 
 

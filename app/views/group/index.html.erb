@@ -4,8 +4,13 @@
 <table data-toggle="table" data-url="data1.json" data-cache="false" data-height="299">
     <thead>
         <tr>
-            <div data-field="name"><div class = "data-field"><%= group.name %></div></th>
+            <div data-field="name"><div class = "data-field">
+            	<% link_to "", groups_path(id: @id), :method => :get %>
+            	<%= group.name %></div></th>
         </tr>
+    
+
+
     </thead>
 </table>
 
