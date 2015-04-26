@@ -23799,3 +23799,238 @@ ActionView::Template::Error (undefined method `name' for nil:NilClass):
   Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
   Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-25 20:44:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (16.8ms)
+  Rendered layouts/_navigation.html.erb (18.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 415ms (Views: 402.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-25 20:44:16 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-04-25 20:44:17 -0700
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.6ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered location/index.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 168ms (Views: 161.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/cafe3.jpg" for 127.0.0.1 at 2015-04-25 20:44:18 -0700
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2015-04-25 20:44:20 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered location/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>Location: </h1> <%= @location.name %>
+  app/views/location/show.html.erb:1:in `_app_views_location_show_html_erb__2791604375021664441_70338517657900'
+
+
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.1ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2015-04-25 20:44:20 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered location/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>Location: </h1> <%= @location.name %>
+  app/views/location/show.html.erb:1:in `_app_views_location_show_html_erb__2791604375021664441_70338514477640'
+
+
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.5ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered location/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 163ms (Views: 147.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:16 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:17 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:17 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-25 20:45:17 -0700
