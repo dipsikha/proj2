@@ -1,1 +1,7 @@
-<h1>Location: </h1> <%= @location.name %>
+<h1><%= @location.name %></h1> 
+<br>
+<% Group.all.each do |g| %>
+<% if g.location == @location.name %>
+	<h5><%= g.name %></h5><%= g.time %>
+<% end %>
+<% end %>

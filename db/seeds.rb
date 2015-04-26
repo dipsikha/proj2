@@ -7,14 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # LOCATIONS
-Location.create name: "Cafe3", description: "Dining Hall", address: "2400 Durant Ave Berkeley, CA 94701"
-Location.create name: "Crossroads", description: "Dining Hall", address: "2415 Bowditch St, Berkeley, CA 94704"
-Location.create name: "CKC", description: "Dining Hall", address: "2601 Warring St, Berkeley, CA 94720"
-Location.create name: "Foothill", description: "Dining Hall", address: "2700 Hearst Ave, Berkeley, CA 94720"
+@cafe3 = Location.create name: "Cafe3", description: "Dining Hall", address: "2400 Durant Ave Berkeley, CA 94701"
+@crossroads = Location.create name: "Crossroads", description: "Dining Hall", address: "2415 Bowditch St, Berkeley, CA 94704"
+@ckc = Location.create name: "CKC", description: "Dining Hall", address: "2601 Warring St, Berkeley, CA 94720"
+@foothill = Location.create name: "Foothill", description: "Dining Hall", address: "2700 Hearst Ave, Berkeley, CA 94720"
 
 # GROUPS
-Group.create name: "The Starks", description: "Winter is Coming", time: Time.new(2015,4,19,18,30,0, "-08:00")
-Group.create name: "The Lannisters", description: "Hear Me Roar!", time: Time.new(2015,4,19,8,0,0, "-08:00")
+Group.create name: "The Starks", description: "Winter is Coming", time: "6:00pm", location: "Foothill"
+Group.create name: "The Lannisters", description: "Hear Me Roar!", time: "4:00pm", location: "CKC"
 
 # USERS
 User.create username: "kingslayer", password: "ilovecersei", name: "Jamie Lannister", year: 3,

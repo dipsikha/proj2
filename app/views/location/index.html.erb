@@ -4,7 +4,7 @@
   <div class="col-sm-6">
  
     <!-- normal -->
-    <% @locations.each do |location| %>
+    <% Location.all.each do |location| %>
     <% @url = "/locations/" + location.id.to_s %>
     <div class="ih-item circle effect1"><a href = <%= @url %> >
         <div class="spinner"></div>
