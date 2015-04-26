@@ -14,8 +14,8 @@ Location.create name: "Foothill", description: "Dining Hall", address: "2700 Hea
 
 # GROUPS
 Group.create name: "House Stark", description: "Winter is Coming", time: "6:00pm", location: "Foothill"
-Group.create name: "House Lannister", description: "Hear Me Roar", time: "11:00am", location: "Clark Kerr"
 Group.create name: "House Tyrell", description: "Growing Strong", time: "6:45pm", location: "Clark Kerr"
+Group.create name: "House Lannister", description: "Hear Me Roar", time: "11:00am", location: "Clark Kerr"
 Group.create name: "House Targaryen", description: "Fire and Blood", time: "5:30pm", location: "Crossroads"
 Group.create name: "House Martell", description: "Unbowed, Unbent, Unbroken", time: "12:30pm", location: "Cafe3"
 

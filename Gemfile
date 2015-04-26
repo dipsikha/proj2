@@ -30,6 +30,7 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'foundation-rails'
 gem 'bootstrap-sass'
+gem 'chronic'
 group :development do
   gem 'rails_layout'
 end

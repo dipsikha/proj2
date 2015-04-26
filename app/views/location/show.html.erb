@@ -6,7 +6,8 @@
 		<th>Description</th>
 		<th>Time</th>
 	</tr>
-	  <% Group.all.each do |g| %>
+	<% @sorted_groups = Group.all.sort_by {|g| Chronic.parse(g.time)} %>
+	  <% @sorted_groups.each do |g| %>
 		  <% if g.location == @location.name %>
 			  <tr>
 			    <td><%= g.name %></td>
