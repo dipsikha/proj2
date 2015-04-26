@@ -20,4 +20,12 @@ class GroupController < ApplicationController
 		flash[:notice] = "This group has been deleted."
 	end
 
+	def index
+		@groups = Group.all
+	end
+
+	def show
+		 @groups = Group.find(params[:id])
+	end
+
 end

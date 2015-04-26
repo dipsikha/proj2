@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   get '/locations', to: 'location#index'
   post '/locations/:id', to: 'location#show'
 
+  get '/groups', to: 'group#index'
+  post '/groups/:id', to: 'group#show'
+
 end
