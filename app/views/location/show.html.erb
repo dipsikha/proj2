@@ -1,7 +1,18 @@
 <h1><%= @location.name %></h1> 
 <br>
-<% Group.all.each do |g| %>
-<% if g.location == @location.name %>
-	<h5><%= g.name %></h5><%= g.time %>
-<% end %>
-<% end %>
+<table class="groups">
+	<tr>
+		<th>Group</th>
+		<th>Description</th>
+		<th>Time</th>
+	</tr>
+	  <% Group.all.each do |g| %>
+		  <% if g.location == @location.name %>
+			  <tr>
+			    <td><%= g.name %></td>
+			    <td><%= g.description %></td> 
+			    <td><%= g.time %></td>
+			  </tr>
+		  <% end %>
+	  <% end %>
+</table>

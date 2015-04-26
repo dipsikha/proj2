@@ -26087,3 +26087,1976 @@ Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:12 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-25 21:23:12 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-26 15:01:35 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (22.2ms)
+  Rendered layouts/_navigation.html.erb (24.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 456ms (Views: 439.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:01:36 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.6ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered location/index.html.erb within layouts/application (24.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_navigation.html.erb (3.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 449ms (Views: 420.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/assets/cafe3.jpg" for 127.0.0.1 at 2015-04-26 15:02:08 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:02:13 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGroup Load (0.5ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered location/show.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 307ms (Views: 298.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:03:44 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered location/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 208ms (Views: 205.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:03:44 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:03:44 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:03:44 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:03:44 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:03:45 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGroup Load (0.1ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered location/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 183ms (Views: 180.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:04:59 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:00 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered location/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 174ms (Views: 171.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:05:15 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:07:01 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered location/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 169ms (Views: 166.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:02 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:07:10 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered location/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 170ms (Views: 167.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:07:11 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:08:24 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGroup Load (0.1ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered location/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 582ms (Views: 577.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:25 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:08:46 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered location/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 518ms (Views: 515.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:08:47 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:09:59 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGroup Load (0.1ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered location/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 485ms (Views: 482.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:00 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:10:25 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered location/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 513ms (Views: 510.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:26 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:10:32 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGroup Load (0.1ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered location/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 530ms (Views: 527.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:10:33 -0700
+  [1m[36m (2.4ms)[0m  [1mDROP TABLE "groups"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "time" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime, "address" varchar(255)) 
+  [1m[36m (1.9ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "username" varchar(255), "password" integer, "name" varchar(255), "year" integer, "major" varchar(255), "phone" integer) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2400 Durant Ave Berkeley, CA 94701"], ["created_at", "2015-04-26 22:17:18.834987"], ["description", "Dining Hall"], ["name", "Cafe3"], ["updated_at", "2015-04-26 22:17:18.834987"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2415 Bowditch St, Berkeley, CA 94704"], ["created_at", "2015-04-26 22:17:18.839317"], ["description", "Dining Hall"], ["name", "Crossroads"], ["updated_at", "2015-04-26 22:17:18.839317"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "2601 Warring St, Berkeley, CA 94720"], ["created_at", "2015-04-26 22:17:18.841430"], ["description", "Dining Hall"], ["name", "Clark Kerr"], ["updated_at", "2015-04-26 22:17:18.841430"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "locations" ("address", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "2700 Hearst Ave, Berkeley, CA 94720"], ["created_at", "2015-04-26 22:17:18.843997"], ["description", "Dining Hall"], ["name", "Foothill"], ["updated_at", "2015-04-26 22:17:18.843997"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "groups" ("created_at", "description", "location", "name", "time", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-04-26 22:17:18.853963"], ["description", "Winter is Coming"], ["location", "Foothill"], ["name", "House Stark"], ["time", "6:00pm"], ["updated_at", "2015-04-26 22:17:18.853963"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "groups" ("created_at", "description", "location", "name", "time", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2015-04-26 22:17:18.856010"], ["description", "Hear Me Roar"], ["location", "Clark Kerr"], ["name", "House Lannister"], ["time", "11:00am"], ["updated_at", "2015-04-26 22:17:18.856010"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "groups" ("created_at", "description", "location", "name", "time", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-04-26 22:17:18.857889"], ["description", "Growing Strong"], ["location", "Clark Kerr"], ["name", "House Tyrell"], ["time", "6:45pm"], ["updated_at", "2015-04-26 22:17:18.857889"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "groups" ("created_at", "description", "location", "name", "time", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2015-04-26 22:17:18.859727"], ["description", "Fire and Blood"], ["location", "Crossroads"], ["name", "House Targaryen"], ["time", "5:30pm"], ["updated_at", "2015-04-26 22:17:18.859727"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "groups" ("created_at", "description", "location", "name", "time", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-04-26 22:17:18.861443"], ["description", "Unbowed, Unbent, Unbroken"], ["location", "Cafe3"], ["name", "House Martell"], ["time", "12:30pm"], ["updated_at", "2015-04-26 22:17:18.861443"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-26 15:17:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (9.4ms)
+  Rendered layouts/_navigation.html.erb (11.1ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 407ms (Views: 396.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-26 15:17:27 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (22.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 195ms (Views: 177.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-26 15:17:32 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 222ms (Views: 221.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-04-26 15:17:46 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w3OdZ8EuiauFFbrC2XYArb5Nz2mIxn0ylpX425PdIcg=", "user"=>{"email"=>"jennyli@berkeley.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.9ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'jennyli@berkeley.edu' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-04-26 22:17:46.934561"], ["email", "jennyli@berkeley.edu"], ["encrypted_password", "$2a$10$84nOUE01DONI3KNLHveYxu5hNUene1kKX5ulzi5cx07GNuLNoZlhm"], ["updated_at", "2015-04-26 22:17:46.934561"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[35mSQL (1.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2015-04-26 22:17:46.942053"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2015-04-26 22:17:46.942053"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-04-26 22:17:46.943026"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 132ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-26 15:17:46 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 311ms (Views: 310.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:17:47 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-04-26 15:17:50 -0700
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered location/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 180ms (Views: 177.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/cafe3.jpg" for 127.0.0.1 at 2015-04-26 15:17:50 -0700
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2015-04-26 15:17:52 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered location/show.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 153ms (Views: 150.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:17:56 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGroup Load (0.1ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered location/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 203ms (Views: 198.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:18:45 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered location/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/Users/jennyli/ruby/proj2/app/views/location/show.html.erb:20: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/location/show.html.erb:20: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered location/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 167ms (Views: 158.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:18:52 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:19:19 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered location/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/jennyli/ruby/proj2/app/views/location/show.html.erb:20: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/location/show.html.erb:20: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jennyli/.rvm/gems/ruby-2.1.2@rails_decal/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:20:07 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered location/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 156ms (Views: 153.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:07 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:07 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:07 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:07 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:07 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:07 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:08 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered location/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 157ms (Views: 154.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:20:27 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:21:21 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered location/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 503ms (Views: 497.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:22 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered location/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 496ms (Views: 492.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:33 -0700
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2015-04-26 15:21:39 -0700
+Processing by LocationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT  "locations".* FROM "locations"  WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGroup Load (0.1ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered location/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 488ms (Views: 485.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/group.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/group.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/location.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-26 15:21:40 -0700

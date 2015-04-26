@@ -1,3 +1,18 @@
-// Place all the styles related to the Location controller here.
+/*// Place all the styles related to the Location controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+.groups {
+	border: 5;
+	width: 80%;
+}
+
+.groups th {
+	font-size: 16px;
+	padding: 10px;
+}
+
+.groups td {
+	font-size: 12px;
+	padding: 10px;
+}
