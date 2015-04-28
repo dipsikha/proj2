@@ -16,6 +16,6 @@ Rails.application.routes.draw do
   get '/groups/new', to: 'group#new', as: 'new_group'
   post 'groups/', to: 'group#create'
 
-  patch 'join', to: 'group#join', as: 'join'
+  patch 'join', to: 'group#join', as: 'join' #this route is a problem
 
 end

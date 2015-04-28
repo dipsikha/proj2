@@ -1,8 +1,6 @@
 
-    <% Group.all.each do |group| %>
-    <% @url = "/groups/" + group.id.to_s %>
-
-
+<% Group.all.each do |group| %>
+<% @url = "/groups/" + group.id.to_s %>
 	<a href = <%= @url %> > <h2><%= group.name %></h2> </a>
 <% end %>
 
