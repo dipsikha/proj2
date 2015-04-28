@@ -29,4 +29,8 @@ class GroupController < ApplicationController
 		 @groups = Group.find(params[:id])
 	end
 
+	def sortByTime
+		 @sorted_groups = Group.sort_by {|g| Chronic.parse(g.time)}
+	end
+
 end

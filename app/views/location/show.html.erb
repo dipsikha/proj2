@@ -1,1 +1,19 @@
-<h1>Location: </h1> <%= @location.name %>
+<h1><%= @location.name %></h1> 
+<br>
+<table class="groups">
+	<tr>
+		<th>Group</th>
+		<th>Description</th>
+		<th>Time</th>
+	</tr>
+	<% @sorted_groups = Group.all.sort_by {|g| Chronic.parse(g.time)} %>
+	  <% @sorted_groups.each do |g| %>
+		  <% if g.location == @location.name %>
+			  <tr>
+			    <td><%= g.name %></td>
+			    <td><%= g.description %></td> 
+			    <td><%= g.time %></td>
+			  </tr>
+		  <% end %>
+	  <% end %>
+</table>

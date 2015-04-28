@@ -5,7 +5,6 @@ class LocationController < ApplicationController
 	end
 
 	def show
-		 @locations = Location.find(params[:id])
+		 @location = Location.find(params[:id])
 	end
-
 end

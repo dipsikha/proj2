@@ -1,27 +1,22 @@
-<div class="container">
-  <div class="row">
-    <h3>Locations</h3>
-    <div class="row">
-     
-          <% @locations.each do |location| %>
-          <% @id = location.id %>
-              <div class="ih-item circle effect1"><% link_to "", locations_path(id: @id), :method => :get %>
+
+
+<div class="row">
+  <div class="col-sm-6">
+ 
+    <!-- normal -->
+    <% Location.all.each do |location| %>
+    <% @url = "/locations/" + location.id.to_s %>
+    <div class="ih-item circle effect1"><a href = <%= @url %> >
         <div class="spinner"></div>
         <div class="img"><%= image_tag("cafe3.jpg", :alt => "cafe") %></div>
         <div class="info">
           <div class="info-back">
             <h3><%= location.name %></h3>
-            <p>Description goes here</p>
+            <p><%= location.address %></p>
           </div>
         </div></a></div>
+    <% end %>
     <!-- end normal -->
-  </div>
-          <% end %>
-
-    </div>
-  </div>
-    <div class="col-sm-6">
  
-    <!-- normal -->
-
+  </div>
 </div>
