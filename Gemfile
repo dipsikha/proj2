@@ -31,6 +31,7 @@ gem 'devise'
 gem 'foundation-rails'
 gem 'bootstrap-sass'
 gem 'chronic'
+gem 'simple_form'
 group :development do
   gem 'rails_layout'
 end

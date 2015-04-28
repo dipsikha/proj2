@@ -1,20 +1,22 @@
 class GroupController < ApplicationController
 
 	def create
-    	Group.create(group_params)
+    	@group = Group.create(group_params)
+    	if @group.save
+	    	redirect_to ("/groups/") #Redirect to location of the group created
+ 		else 
+ 			flash[:error] = @group.errors.full_messages.to_sentence
+ 			redirect_to new_group_path
+ 		end
 	end
 
 	def group_params
     	params.require(:group).permit(:name, :location)
   	end
 
-	def join
-		@group = Group.find(params[:gid])
-		user = User.find(params[:uid])
-   		group.users <<  user #Add user to group
-   		group.save
-    end
-
+    def new
+		 @group = Group.new
+	end
 
 	def destroy
 		@group.destroy
@@ -31,6 +33,13 @@ class GroupController < ApplicationController
 
 	def sortByTime
 		 @sorted_groups = Group.sort_by {|g| Chronic.parse(g.time)}
+	end
+	def join
+		@group = Group.find(params[:id])
+		user = current_user 
+		group.users <<  user # add user to group
+		@group.save
+		redirect_to group_path
 	end
 
 end
