@@ -3,12 +3,9 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :name %><br />
-  <%= f.email_field :name, autofocus: true %></div>
-
-  <div><%= f.label :username %><br />
-  <%= f.email_field :username %></div>
-
+  <div><%= f.label :name %>
+      <%= f.text_field :name, :autofocus => true %> </div>
+>>>>>>> aeb9ef89cd451103eb9aff60591869869c17cc35
   <div><%= f.label :email %><br />
   <%= f.email_field :email %></div>
 

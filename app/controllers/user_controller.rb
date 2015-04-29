@@ -7,9 +7,4 @@ class UserController < ApplicationController
   	def show
    	 	@users = User.find(params[:id])
   	end
-
-  	private
-	def user
-		params.require(:user).permit(:name, :username, :email, :password)
-	end
 end

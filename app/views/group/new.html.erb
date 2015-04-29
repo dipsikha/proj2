@@ -1,0 +1,9 @@
+<h2> Create A Group </h2>
+<%= simple_form_for Group.new do |f| %>
+  Name <%= f.text_field :name %>
+  Description <%= f.text_field :description %>
+  Location <%= f.text_field :location %>
+  Time <%= f.text_field :time %>
+
+  <%= f.submit "Create" %>
+<% end %>

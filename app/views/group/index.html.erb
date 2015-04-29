@@ -1,17 +1,6 @@
-<% @groups.each do |group| %>
-    <% @id = group.id %>
 
-<table data-toggle="table" data-url="data1.json" data-cache="false" data-height="299">
-    <thead>
-        <tr>
-            <div data-field="name"><div class = "data-field">
-            	<% link_to "", groups_path(id: @id), :method => :get %>
-            	<%= group.name %></div></th>
-        </tr>
-    
-
-
-    </thead>
-</table>
-
+<% Group.all.each do |group| %>
+<% @url = "/groups/" + group.id.to_s %>
+	<a href = <%= @url %> > <h2><%= group.name %></h2> </a>
 <% end %>
+
