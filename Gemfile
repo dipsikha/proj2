@@ -32,6 +32,7 @@ gem 'foundation-rails'
 gem 'bootstrap-sass'
 gem 'chronic'
 gem 'simple_form'
+gem 'annotate'
 group :development do
   gem 'rails_layout'
 end
