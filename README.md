@@ -5,7 +5,7 @@ dinr
 Dipsikha Halder, Jenny Li, Jeffrey Lin, Saloni Shah
 
 ##**Demo Link:**
-TBD
+[https://dinrapp.herokuapp.com/](https://dinrapp.herokuapp.com/)
 
 ##**Idea:** An application where students can find a group to eat with at the Cal Dining Hall.
 
