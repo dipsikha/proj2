@@ -1,5 +1,5 @@
 <h1><%= @group.name %></h1>
-			    <%= @group.description %>
-			    <%= @group.time %>
-			    <%= @group.location %>
-<%= button_to "Join this group", join_path(:id => @group.id), :class => "button medium", :method => :patch %>
+			    <%= @group.description %> <br>
+			    <%= @group.time %> <br>
+			    <%= @group.location %> <br>
+<%= button_to "Join this group", join_path(id: @group.id), :class => "button medium", :method => :patch %>

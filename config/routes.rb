@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   # get '/groups', to: 'group#index'
   # get '/groups/:id', to: 'group#show'
 
-  patch '/join', to: 'users#join', as: 'join' #this route is a problem
+  patch '/join', to: 'users#join', as: :join
+  post '/groups/new', to: 'groups#new'
 
 end

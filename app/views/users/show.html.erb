@@ -1,3 +1,11 @@
-<h3>User</h3>
-<p>Name: <%= @user.name if @user.name %></p>
+<h3><%= @user.name %></h3>  <%= link_to 'Edit Profile', edit_user_registration_path %>
 <p>Email: <%= @user.email if @user.email %></p>
+<p>Year: <%= @user.year if @user.year %></p>
+<p>Major: <%= @user.major if @user.major %></p>
+<p>Groups: 
+	<% @user.groups.each do |g| %>
+		<%= g.name %> <br>
+	<% end %>
+</p>
+<br>
+

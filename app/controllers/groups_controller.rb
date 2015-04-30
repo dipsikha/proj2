@@ -1,6 +1,9 @@
 class GroupsController < ApplicationController
 	def create
     	@group = Group.create(group_params)
+    	@locName = group_params[:location]
+    	@actualLoc = Location.find_by name: @locName
+    	@group.location_id = @actualLoc.id
     	if @group.save
 	    	redirect_to ("/groups/") #Redirect to location of the group created
  		else 
@@ -10,7 +13,7 @@ class GroupsController < ApplicationController
 	end
 
 	def group_params
-    	params.require(:group).permit(:name, :location)
+    	params.require(:group).permit(:name, :description, :location, :time)
   	end
 
     def new
@@ -23,7 +26,7 @@ class GroupsController < ApplicationController
 	end
 
 	def index
-		@groups = Group.all
+		@group = Group.all
 	end
 
 	def show
@@ -31,7 +34,7 @@ class GroupsController < ApplicationController
 	end
 
 	def sortByTime
-		 @sorted_groups = Group.sort_by {|g| Chronic.parse(g.time)}
+		 @sorted_groups = Group.all.sort_by {|g| Chronic.parse(g.time)}
 	end
 
 end

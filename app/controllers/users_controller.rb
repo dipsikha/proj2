@@ -11,9 +11,16 @@ class UsersController < ApplicationController
     def join
       @group = Group.find(params[:id])
       @user = current_user
-      @user.groups << @group 
-      @group.users << @user # add user to group
-      @user.save
-      redirect_to :back
+      if @user.groups.include?(@group)
+        flash[:notice] = "You're already in " + @group.name + "!"
+        redirect_to :back
+      else
+        @user.groups << @group 
+        @group.users << @user # add user to group
+        if @user.save
+          flash[:notice] = "You've successfully joined " + @group.name + "!"
+          redirect_to :back
+        end
+      end
   end
 end
