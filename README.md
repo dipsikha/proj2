@@ -7,7 +7,7 @@ Dipsikha Halder, Jenny Li, Jeffrey Lin, Saloni Shah
 ##**Demo Link:**
 TBD
 
-**Idea:** An application where students can find a group to eat with at the Cal Dining Hall.
+##**Idea:** An application where students can find a group to eat with at the Cal Dining Hall.
 
 ##User
 -has username, password, name, year, major, and phone number
