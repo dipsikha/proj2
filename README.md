@@ -1,10 +1,10 @@
-#**Title:**
+##**Title:**
 dinr
 
-#**Team Members:**
+##**Team Members:**
 Dipsikha Halder, Jenny Li, Jeffrey Lin, Saloni Shah
 
-#**Demo Link:**
+##**Demo Link:**
 TBD
 
 **Idea:** An application where students can find a group to eat with at the Cal Dining Hall.
