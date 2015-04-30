@@ -1,5 +1,4 @@
-class GroupController < ApplicationController
-
+class GroupsController < ApplicationController
 	def create
     	@group = Group.create(group_params)
     	if @group.save
@@ -15,7 +14,7 @@ class GroupController < ApplicationController
   	end
 
     def new
-		 @group = Group.new
+		 @groups = Group.new
 	end
 
 	def destroy
@@ -28,18 +27,11 @@ class GroupController < ApplicationController
 	end
 
 	def show
-		 @groups = Group.find(params[:id])
+		 @group = Group.find(params[:id])
 	end
 
 	def sortByTime
 		 @sorted_groups = Group.sort_by {|g| Chronic.parse(g.time)}
-	end
-	def join
-		@group = Group.find(params[:id])
-		user = current_user 
-		group.users <<  user # add user to group
-		@group.save
-		redirect_to group_path
 	end
 
 end

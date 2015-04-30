@@ -4,10 +4,19 @@
   <%= devise_error_messages! %>
 
   <div><%= f.label :name %>
-      <%= f.text_field :name, :autofocus => true %> </div>
->>>>>>> aeb9ef89cd451103eb9aff60591869869c17cc35
+  <%= f.text_field :name, :autofocus => true %> </div>
+
   <div><%= f.label :email %><br />
   <%= f.email_field :email %></div>
+
+  <div><%= f.label :year %>
+  <%= f.text_field :year, placeholder: 'eg. 1, 2, 3, 4' %> </div>
+
+  <div><%= f.label :major %>
+  <%= f.text_field :major %> </div>
+
+  <div><%= f.label :username %><br />
+  <%= f.text_field :username %></div>
 
   <div><%= f.label :password %> <% if @validatable %><i>(<%= @minimum_password_length %> characters minimum)</i><% end %><br />
     <%= f.password_field :password, autocomplete: "off" %></div>

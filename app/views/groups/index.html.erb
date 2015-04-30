@@ -1,3 +1,6 @@
+<br>
+<%= button_to "+ Create a group", new_group_path(@group) %> 
+<!-- ERROR: no route matches post -->
 
 <% Group.all.each do |group| %>
 <% @url = "/groups/" + group.id.to_s %>

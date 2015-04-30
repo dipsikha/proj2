@@ -16,7 +16,6 @@
 #  current_sign_in_ip     :string(255)
 #  last_sign_in_ip        :string(255)
 #  username               :string(255)
-#  password               :integer
 #  name                   :string(255)
 #  year                   :integer
 #  major                  :string(255)
